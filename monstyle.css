@@ -1,0 +1,221 @@
+﻿body {
+height: 100%;
+margin: 20px 3px 20px 3px;
+background-image: url(images/win10.jpg);
+background-position: center;
+background-size: cover;
+color:#000000;
+font:0.9em Helvetica,Narrow;
+text-align: center;
+min-width: 250px;
+
+}
+a:hover {
+color: #de1927;
+}
+div.contenu {
+	position: relative;
+	background-color: rgb(164, 162, 164,0.5);
+	max-width: 92%;
+	border-radius: 97px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px 3px 1px 3px;
+	height: 641px;
+}
+div.main {
+width: 95%;
+display:table;
+border:0.18rem solid #798081;
+background-color:rgb(204, 204, 204,0.5);
+border-radius:8px 8px 8px 8px;
+padding: 20px 0 20px 0;
+margin-right: auto;
+margin-left: auto;
+margin-top:30px;
+margin-bottom:20px;
+}
+.liens{
+float:left;
+width:33%;
+height:170px;
+}
+.demie{
+width:50%;
+/* height:200px; */
+float:left;
+}
+.plein{
+width:100%;
+float:left;
+/* height:170px; */
+}
+.footer {
+width: 100%; /* On a indiqu� une largeur (obligatoire) */
+float:left;
+/* margin: auto; /* On peut donc demander � ce que le bloc soit centr� avec auto */
+margin-top:60px;
+}
+.droit {
+text-align: right;
+margin-right:15px;
+}
+.centrer {
+text-align: center;
+}
+.gauche {
+text-align: left;
+margin-left: 33px;
+}
+.bleu-italic{
+	color: #00008B; /* darkblue; */
+	font-family: sans-serif, Arial, Helvetica;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-style: italic;
+}
+.bleu-italic a{
+	color: #000000;
+	font-size: 0.8em;
+	font-weight: bold;
+	font-style: normal;
+}
+img {
+vertical-align:top;
+margin:0 5px 0 5px;
+//margin:0 0.8em 0 0;
+}
+/*
+pour les tableaux
+*/
+.tableau {
+	text-align:left; /* OK pour IE */
+	font:0.9em Helvetica,Narrow;
+}
+.tableau table{
+}
+.tableau table tr{
+	font:0.9em Helvetica,Narrow;
+	vertical-align:top;
+}
+.tableau table th{
+	font:1em Helvetica,Narrow;
+	font-weight: bold;
+	text-align:left; /* OK pour IE */
+	padding:0 5px 15px 0; /* Marge entre tableau et cellule */
+}
+.tableau table td{
+	font:0.9em Helvetica,Narrow;
+	text-align:left; /* OK pour IE */
+	padding:0 5px 0 0; /* Marge entre tableau et cellule */
+}
+
+		/*	pour les ecrans de 1160px � 1060px	*/	/*	pour les ecrans de 1160px � 1060px	*/
+@media (min-width: 1060px) and (max-width: 1160px) {
+div.contenu {
+max-width: 98%;
+}
+div.main {
+width: 98%;
+}
+}
+		/*	pour les ecrans de 1059px � 960px	*/	/*	pour les ecrans de 1059px � 960px	*/
+@media (min-width: 960px) and (max-width: 1059px) {
+	body {
+	margin: 0;
+}
+div.contenu {
+max-width: 98%;
+}
+div.main {
+width: 99%;
+}
+#google {	/* partie à cacher*/
+	visibility: hidden;
+	display:none;
+	}
+}
+		/*	pour les ecrans > 959px	*/	/*	pour les ecrans > 959px	*/
+@media (max-width: 959px){
+body {
+	margin:0;
+	padding:0;
+	background-color:#a4a2a4;
+}
+#cacher, #google {	/* partie à cacher */
+/* visibility: hidden; */
+display: none;
+}
+div.contenu {
+border-radius:0;
+padding: 10px 0px 0px 0px;
+margin:0;
+border:0;
+max-width: 100%;
+}
+div.main {
+	display:block;
+/* 	width: 98%; */
+	width: 100%;
+	border:0;
+	border-radius:0;
+	padding:0px;
+/* 	margin: auto; */
+	margin:0;
+	max-width: 100%;
+}
+.liens, .demie, .plein{
+	border:0.18rem solid #798081;
+	background-color:#cccccc;
+	border-radius:8px 8px 8px 8px;
+	/* position:static; */
+	width: 100%;
+	padding:20px 0 0 0;
+	font-size: 0.2em;
+	margin:0 0 20px 0;
+}
+#bas{
+position:relative;
+top: 850px;
+}
+.top span.demie{
+	position:relative;
+	top: -600px;
+	padding:20px 0 20px 0;
+	margin:0 0 30px 0;
+}
+}
+.nom_doc{
+	height: 39px;
+	position: relative;
+	top: -1px;
+	border-radius: 13px;
+	width: 216px;
+	color: blue;
+font-size: 1.5em;
+}
+/* ==========================================================================
+    Taskbar
+========================================================================== */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  height: 43px;
+  width: 100%;
+  background: #008FF0;
+}
+.taskbar .icons-left {
+  height: 43px;
+  display: inline-block;
+}
+
+.taskbar .icons-left #start-menu, .taskbar .icons-left #tabs-windows {
+	height: 39px;
+width: 216px;
+border-color: #60b8fa;
+border-radius: 27px;
+background: #60b8fa;
+position: relative;
+color: #000;
+font-size: 1.5em;
+}
